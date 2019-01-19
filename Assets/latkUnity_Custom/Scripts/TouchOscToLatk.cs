@@ -29,7 +29,8 @@ using UnityOSC;
 
 public class TouchOscToLatk : MonoBehaviour
 {
-
+    public LightningArtist latk;
+    public float scaler = 10f;
     public enum OscMode { SEND, RECEIVE, SEND_RECEIVE };
     public OscMode oscMode = OscMode.RECEIVE;
     public enum MsgMode { P5, OF };
@@ -95,7 +96,10 @@ public class TouchOscToLatk : MonoBehaviour
         switch (msgMode) {
             case (MsgMode.P5):
                 //x = (float) pckt.Data[0];
-                Debug.Log(pckt.Data[0]);
+                Vector3 pos = new Vector3((float)pckt.Data[0], (float)pckt.Data[1], (float)pckt.Data[2]);
+                latk.target.position = new Vector3(pos.x * scaler, pos.y * scaler, 0f);
+                latk.clicked = pos.z > 0.5f;
+                Debug.Log(pos);
                 break;
             case (MsgMode.OF):
                 OSCMessage msg = pckt.Data[0] as UnityOSC.OSCMessage;
