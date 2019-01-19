@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 731cdf5867c2f5e449d729240591fa63
+  productGUID: 38e242fef8181db44a8b48299a351d97
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -634,7 +634,7 @@ PlayerSettings:
     m_VersionName: 
   luminPrivilege: []
   luminMinimumPlatformAPILevel: 3
-  facebookSdkVersion: 
+  facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 
   projectName: 
