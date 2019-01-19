@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/UnityOSC/Examples/DebugReceiver/Scenes/DebugReceiver.unity
+    guid: bbeb43d1e27936d4e8e5995e58aa2345
   m_configObjects: {}
