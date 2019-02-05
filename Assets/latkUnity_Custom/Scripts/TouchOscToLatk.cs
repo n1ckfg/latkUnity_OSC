@@ -91,22 +91,21 @@ public class TouchOscToLatk : MonoBehaviour
             return;
         }
 
-        float x = 0f;
+		Vector3 pos = Vector3.zero;
 
         switch (msgMode) {
             case (MsgMode.P5):
-                //x = (float) pckt.Data[0];
-                Vector3 pos = new Vector3((float)pckt.Data[0], (float)pckt.Data[1], (float)pckt.Data[2]);
-                latk.target.position = new Vector3(pos.x * scaler, pos.y * scaler, 0f);
-                latk.clicked = pos.z > 0.5f;
-                Debug.Log(pos);
+                pos = new Vector3((float)pckt.Data[0], (float)pckt.Data[1], (float)pckt.Data[2]);
                 break;
             case (MsgMode.OF):
                 OSCMessage msg = pckt.Data[0] as UnityOSC.OSCMessage;
-                //x = (float) msg.Data[0];
-                Debug.Log(msg.Data[0]);
+				pos = new Vector3((float)msg.Data[0], (float)msg.Data[1], (float)msg.Data[2]);
                 break;
         }
+
+		latk.target.position = new Vector3(pos.x * scaler, pos.y * scaler, 0f);
+		latk.clicked = pos.z > 0.5f;
+		Debug.Log(pos);
 
         /*
         // Origin
