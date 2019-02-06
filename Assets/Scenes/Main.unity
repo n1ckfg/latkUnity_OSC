@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c091f7b998161f4408c63430844edd50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  latk: {fileID: 0}
+  latk: {fileID: 1938907353}
   scaler: 10
   oscMode: 1
   msgMode: 1
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19e88ca03224a0b4e8b00c5c4bccd2e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  latk: {fileID: 0}
+  latk: {fileID: 1938907353}
   scaler: 10
   oscMode: 1
   msgMode: 1
