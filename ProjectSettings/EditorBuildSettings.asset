@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/UnityOSC/Examples/DebugReceiver/Scenes/DebugReceiver.unity
-    guid: bbeb43d1e27936d4e8e5995e58aa2345
+    path: Assets/Scenes/Main.unity
+    guid: 6ec78bec6ecd10840916154d62167f55
   m_configObjects: {}
